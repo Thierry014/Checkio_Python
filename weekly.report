@@ -1,0 +1,10 @@
+1. String is immutable(can not change)
+eg: update str[1] = 'e' to 'c'  str = 'hello'
+
+str = str[:1] + 'c' +str[1+1:]
+
+h+c+llo
+
+
+
+2. when change the string or list itself use while loop instead of for loop
