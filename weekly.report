@@ -8,3 +8,7 @@ h+c+llo
 
 
 2. when change the string or list itself use while loop instead of for loop
+
+
+3. backslash => replace \ to -
+x.replace('\\', '-')
