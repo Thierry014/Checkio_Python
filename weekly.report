@@ -12,3 +12,8 @@ h+c+llo
 
 3. backslash => replace \ to -
 x.replace('\\', '-')
+
+
+4. how to use global variable in nest function 
+in nest function => make a nonlocal define 
+nonlocal variable_name 
