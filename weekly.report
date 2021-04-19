@@ -17,3 +17,7 @@ x.replace('\\', '-')
 4. how to use global variable in nest function 
 in nest function => make a nonlocal define 
 nonlocal variable_name 
+
+
+5.  *args => flexible parameter 
+    **kwargs =>  is used to pass a keyworded, variable-length argument, dictionary to a function
