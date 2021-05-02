@@ -21,3 +21,7 @@ nonlocal variable_name
 
 5.  *args => flexible parameter 
     **kwargs =>  is used to pass a keyworded, variable-length argument, dictionary to a function
+
+
+6. sorted a list based on 2 or more arguement 
+put argurment/attribute in a tuple 
