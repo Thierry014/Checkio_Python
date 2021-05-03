@@ -25,3 +25,7 @@ nonlocal variable_name
 
 6. sorted a list based on 2 or more arguement 
 put argurment/attribute in a tuple 
+
+
+7. two for loop in one time 
+[(x, y) for x in [1,2,3] for y in [3,1,4] if x != y]
