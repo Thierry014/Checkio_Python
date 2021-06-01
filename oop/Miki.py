@@ -7,14 +7,19 @@ class Go_card:
     def travel(self,money):
         self.balance -= money
         self.generate_record('Ride',f'${money}',f'${self.balance}')
+        self.run(query=input('User input: '))
     
     def topup(self,money):
         self.balance += money
         self.generate_record('Top up',f'${money}',f'${self.balance}')
+        self.run(query=input('User input: '))
+
 
     
     def show_balance(self):
         print(f'Current Balance is ${self.balance}')
+        self.run(query=input('User input: '))
+
 
     def print_statement(self):
         # add current state
@@ -35,7 +40,9 @@ class Go_card:
         query = query.split(' ')
         # r 12 => ['r',12]  q=>[q]
         if len(query) > 2:
-            print('Bad')
+            print('Bad Command')
+            self.run(query=input('User input: '))
+
 
         if query[0] == 'r' and query[1].isnumeric():
             self.travel(float(query[1]))
@@ -46,18 +53,14 @@ class Go_card:
         elif query[0] == 'q' and len(query) == 1:
             self.print_statement()
         else:
-            print('Bad')
+            print('Bad Command')
+            self.run(query=input('User input: '))
 
-             
+    
+    def run(self,query=input('User input: ')):
+        self.swipe(query)
+        
 
-
-
-
+# initalize object 
 miki = Go_card()
-miki.swipe('r 30')
-miki.swipe('r 12')
-miki.swipe('t 20')
-miki.swipe('lol')
-
-miki.swipe('b')
-miki.swipe('q')
+miki.run()
